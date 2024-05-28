@@ -1,5 +1,6 @@
 import React from 'react'
 import { snsLink } from "../../data/footer.js"
+
 const Sns = () => {
   return (
     <>

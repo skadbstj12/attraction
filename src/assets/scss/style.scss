@@ -7,12 +7,13 @@
 @import "setting/mixin";
 @import "setting/common";
 
-//section
 
+//section
+@import "section/loading";
 @import "section/layout";
 @import "section/header";
 @import "section/footer";
 @import "section/search";
-@import "section/video";
+@import "section/swipper";
 @import "section/video";
 @import "section/channel";
