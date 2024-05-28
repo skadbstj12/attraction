@@ -1,0 +1,60 @@
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    z-index: 10000;
+    background-color: var(--black);
+}
+
+#main {
+    max-width: 2000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-left: 260px;
+    background-color: #111;
+}
+
+#footer {
+    text-align: center;
+    background-color: #222;
+    padding: 20px 20px 20px 260px;
+}
+
+#rm,
+#rv,
+#action,
+#noir,
+#comedy {
+    padding: 40px;
+
+    h2 {
+        margin-bottom: 0.6rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 960px) {
+    #header {
+        left: -260px;
+    }
+
+    #main {
+        margin-top: 80px;
+        padding-left: 0;
+    }
+
+    #rm,
+    #rv,
+    #action,
+    #noir,
+    #comedy {
+        padding: 20px;
+
+        h2 {
+            margin-bottom: 0.6rem;
+            font-size: 1.25rem;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.footer__sns {
+    ul {
+        margin-right: 1rem;
+        display: flex;
+        justify-content: right;
+
+        li {
+            padding: 8px 9px;
+
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    #footer {}
+}
