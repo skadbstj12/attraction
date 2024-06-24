@@ -12,6 +12,7 @@ const SearchPage = () => {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
+                console.log('API Key:', process.env.REACT_APP_YOUTUBE_API_KEY); // API 키 확인
                 const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&type=video&q=${searchID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
                 const data = await response.json();
                 console.log(data); // 데이터 확인
