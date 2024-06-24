@@ -14,7 +14,8 @@ const SearchPage = () => {
             try {
                 const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&type=video&q=${searchID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
                 const data = await response.json();
-                
+                console.log(data); // 데이터 확인
+
                 if (data.items) {
                     setVideos(data.items);
                 } else {
@@ -48,9 +49,9 @@ const SearchPage = () => {
                 <section id='searchPage' className='fade-in'>
                     <h2><em>{searchID}</em> 를 검색한 결과입니다.</h2>
                     <div className='video__inner'>
-                        {videos.length > 0 ? (
+                        {Array.isArray(videos) && videos.length > 0 ? (
                             videos.map((video, index) => (
-                                < div className='video' key={index} >
+                                <div className='video' key={index}>
                                     <div className="video__thumb play__icon">
                                         <Link to={`/video/${video.id.videoId}`} style={{ backgroundImage: `url(${video.snippet.thumbnails.high.url})` }}>
 
@@ -68,7 +69,7 @@ const SearchPage = () => {
                                             </Link>
                                         </div>
                                     </div>
-                                </div >
+                                </div>
                             ))
                         ) : (
                             <p>검색 결과가 없습니다.</p>
