@@ -9,78 +9,78 @@ import { FaRegFaceGrinTears } from "react-icons/fa6";
 
 export const headerMenus = [
     {
-        title: "윤서",
+        title: "최신 영화",
         icon: <MdMovieEdit />,
-        src: "/search/yoonseo"
+        src: "/search/최신 영화"
     }, {
-        title: "추천영상",
+        title: "추천 영화",
         icon: <AiOutlineLike />,
-        src: "/search/추천 영상"
+        src: "/search/추천 영화"
     },
     {
-        title: "추천영화",
+        title: "인기 영화",
         icon: <FcLike />,
-        src: "/search/추천 영화"
+        src: "/search/인기 영화"
     },
     {
         title: "느와르",
         icon: <PiDetective />,
-        src: "/search/느와르"
+        src: "/search/느와르 영화"
     },
     {
         title: "액션",
         icon: <FaExplosion />,
-        src: "/search/액션"
+        src: "/search/액션 영화"
     },
     {
         title: "멜로",
         icon: <LuClover />,
-        src: "/search/멜로"
+        src: "/search/멜로 영화"
     },
 
     {
         title: "코미디",
         icon: <FaRegFaceGrinTears />,
-        src: "/search/코미디"
+        src: "/search/코미디 영화"
     },
 ]
 
 export const searchKeyword = [
     {
         title: "action",
-        src: "/search/action"
+        src: "/search/action movie"
     },
     {
         title: "crime",
-        src: "/search/crime"
+        src: "/search/crime movie"
     },
     {
         title: "science fiction",
-        src: "/search/SF"
+        src: "/search/SF movie"
     },
     {
         title: "comedy",
-        src: "/search/comedy"
+        src: "/search/comedy movie"
     },
     {
         title: "romantic",
-        src: "/search/romantic"
+        src: "/search/romantic movie"
     },
     {
         title: "thriller",
-        src: "/search/thriller"
+        src: "/search/thriller movie"
     },
     {
         title: "Horror",
-        src: "/search/Horror"
+        src: "/search/Horror movie"
     },
     {
         title: "fantasy",
-        src: "/search/fantasy"
+        src: "/search/fantasy movie"
     },
     {
         title: "whodunit",
-        src: "/search/whodunit"
+        src: "/search/whodunit movie"
     },
 
 ]

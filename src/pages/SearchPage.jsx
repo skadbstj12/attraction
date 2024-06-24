@@ -54,7 +54,7 @@ const SearchPage = () => {
                                         </Link>
                                     </div>
                                     <div className='author'>
-                                        <Link to={`/video/${video.snippet.channelId}`}>
+                                        <Link to={`/channel/${video.snippet.channelId}`}>
                                             {video.snippet.channelTitle}
                                         </Link>
                                     </div>
