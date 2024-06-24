@@ -2,15 +2,16 @@
 width: 100%;
 height: 800px;
     .content{
-
+height: 100%;
         .homeMovie{
             margin: 0 auto;
             justify-content: center;
             text-align: center;
-            height: 200px;
+            height: 100px;
             display: block;
             width: 100%;
             margin-bottom: 50px;
+
             
             h1{
                 height: 100px;
@@ -35,30 +36,43 @@ height: 800px;
             }
         }
 
-        .feature{
-            justify-content: center;
-            text-align: center;
-            margin-bottom: 50px;
-            display: block;
-            width: 100%;
-            height: 100px;
-
-            h2{
-
-            }
-
-            p{
-
-            }
-
-            button{
-                border-radius: 20px;
-                background-color: #fe7c7c;
-                padding: 10px;
-                cursor: pointer;
-
-                &:hover{
-                    background-color: #a23c3c;
+        .features{
+display: flex;
+            height: 100%;
+            .feature{
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 50px;
+                display: block;
+                width: 100%;
+                height: 100px;
+    
+                h2{
+    
+                }
+    
+                p{
+    
+                }
+    
+                img{
+                    width: 100px;
+                    height: 100px;
+                    background-color: #fff;
+                    background-repeat: no-repeat;
+                    
+                    justify-content: center;
+                }
+    
+                button{
+                    border-radius: 20px;
+                    background-color: #fe7c7c;
+                    padding: 10px;
+                    cursor: pointer;
+    
+                    &:hover{
+                        background-color: #a23c3c;
+                    }
                 }
             }
         }
